@@ -3,13 +3,15 @@
 这里是一个简单的测试方法。
 测试效果见下图栗子: 
 ```js
-var m = array.length, t, i;
-while (m) {
-    i = Math.floor(Math.random() * m--);
-    t = array[m];
-    array[m] = array[i];
-    array[i] = t;
-    return array;
+function (array){
+    var m = array.length, t, i;
+    while (m) {
+        i = Math.floor(Math.random() * m--);
+        t = array[m];
+        array[m] = array[i];
+        array[i] = t;
+        return array;
+    }
 }
 ```
 取数据 ["A","2","3","4","5","6","7","8","9","10","J","Q","K"]
